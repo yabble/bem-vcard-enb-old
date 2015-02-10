@@ -30,9 +30,9 @@ install:
 .PHONY: production development
 production development:
 	YENV=$@ $(ENB) make $(ENB_FLAGS) pages/index
-	scp -P $(SSH_PORT) pages/index/_index.css rozhdestvenskiy.ru:/var/www/vhosts/rozhdestvenskiy.ru/public/
-	scp -P $(SSH_PORT) pages/index/_index.js rozhdestvenskiy.ru:/var/www/vhosts/rozhdestvenskiy.ru/public/
-	scp -P $(SSH_PORT) pages/index/index.html rozhdestvenskiy.ru:/var/www/vhosts/rozhdestvenskiy.ru/public/
+	scp -P $(SSH_PORT) pages/index/_index.css yabble.ru:/var/www/yabble.ru/html/
+	scp -P $(SSH_PORT) pages/index/_index.js yabble.ru:/var/www/yabble.ru/html/
+	scp -P $(SSH_PORT) pages/index/index.html yabble.ru:/var/www/yabble.ru/html/
 
 .PHONY: clean
 clean::
