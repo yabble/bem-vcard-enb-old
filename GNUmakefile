@@ -33,8 +33,8 @@ production development:
 
 # Deploy
 REMOTE_COPY = scp
-REMOTE_DOMAIN = rozhdestvenskiy.ru
-REMOTE_PATH = /var/www/vhosts/rozhdestvenskiy.ru/public/
+REMOTE_DOMAIN = yabble.ru
+REMOTE_PATH = /var/www/yabble.ru/html/
 
 .PHONY: deploy
 deploy:
